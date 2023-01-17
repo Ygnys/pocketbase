@@ -12,7 +12,7 @@
 
 [PocketBase](https://pocketbase.io) is an open source Go backend, consisting of:
 
-- embedded database (_SQLite_) with **realtime subscriptions**
+- embedded database (_SQLite_) with **real-time subscriptions**
 - built-in **files and users management**
 - convenient **Admin dashboard UI**
 - and simple **REST-ish API**
@@ -34,7 +34,7 @@ The easiest way to interact with the API is to use one of the official SDK clien
 ## Overview
 
 PocketBase could be [downloaded directly as a standalone app](https://github.com/pocketbase/pocketbase/releases) or it could be used as a Go framework/toolkit which allows you to build
-your own custom app specific business logic and still have a single portable executable at the end.
+your own custom app-specific business logic and still have a single portable executable at the end.
 
 ### Installation
 
@@ -92,7 +92,7 @@ Running/building the application is the same as for any other Go program, aka. j
 
 If CGO is enabled, it will use [mattn/go-sqlite3](https://pkg.go.dev/github.com/mattn/go-sqlite3) driver, otherwise - [modernc.org/sqlite](https://pkg.go.dev/modernc.org/sqlite). You can enable and disable CGO by setting the `CGO_ENABLED` environment variable to `1` or `0` respectively.
 
-Enable CGO only if you really need to squeeze the read/write query performance at the expense of complicating cross compilation.
+Enable CGO only if you really need to squeeze the read/write query performance at the expense of complicating cross-compilation.
 
 To build the minimal standalone executable, like the prebuilt ones in the releases page, you can simply run `go build` inside the `examples/base` directory.
 
@@ -118,7 +118,7 @@ All reports will be promptly addressed, and you'll be credited accordingly.
 PocketBase is free and open source project licensed under the [MIT License](LICENSE.md).
 You are free to do whatever you want with it, even offering it as a paid service.
 
-You could help continuing its development by:
+You could help continue its development by:
 
 - [Contribute to the source code](CONTRIBUTING.md)
 - [Suggest new features and report issues](https://github.com/pocketbase/pocketbase/issues)
@@ -126,11 +126,11 @@ You could help continuing its development by:
 
 PRs for _small features_ (eg. adding new OAuth2 providers), bug and documentation fixes, etc. are more than welcome.
 
-But please refrain creating PRs for _big features_ without previously discussing the implementation details. Reviewing big PRs often requires a lot of time and tedious back-and-forth communication.
+But please refrain from creating PRs for _big features_ without previously discussing the implementation details. Reviewing big PRs often requires a lot of time and tedious back-and-forth communication.
 PocketBase has a [roadmap](https://github.com/orgs/pocketbase/projects/2)
 and I try to work on issues in a specific order and such PRs often come in out of nowhere and skew all initial planning.
 
-Don't get upset if I close your PR, even if it is well executed and tested. This doesn't mean that it will never be merged.
+Don't get upset if I close your PR, even if it is well-executed and tested. This doesn't mean that it will never be merged.
 Later we can always refer to it and/or take pieces of your implementation when the time comes to work on the issue (don't worry you'll be credited in the release notes).
 
 _Please also note that PocketBase was initially created to serve as a new backend for my other open source project - [Presentator](https://presentator.io) (see [#183](https://github.com/presentator/presentator/issues/183)),
